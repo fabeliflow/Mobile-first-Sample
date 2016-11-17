@@ -1,0 +1,77 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.navbar-inverse {
+  border: none;
+  background-color: app-color(navbar);
+
+  @include app-styles($navbar);
+
+  .navbar-brand {
+    color: app-color(navbar, 'foreground');
+  }
+
+  .navbar-collapse {
+    text-align: center;
+    border-color: transparent;
+  }
+
+  .navbar-toggle {
+    border-color: app-color(navbar-toggle, 'border');
+
+    @include app-styles($navbar-toggle);
+
+    &:hover, &:focus {
+      background-color: app-color(navbar-toggle, 'hover-focus');
+    }
+  }
+
+  .navbar-right {
+    text-transform: uppercase;
+
+    .dropdown-toggle {
+      color: app-color(navbar, 'foreground');
+
+      &:hover {
+        color: app-color(navbar, 'hover');
+      }
+    }
+
+    .open {
+      .dropdown-toggle {
+        background-color: app-color(navbar, 'focus');
+
+        &:hover, &:focus {
+          background-color: app-color(navbar, 'focus');
+        }
+      }
+
+      .dropdown-menu {
+        li a {
+          color: app-color(dropdown-menu, 'foreground');
+        }
+      }
+    }
+
+    .dropdown-menu {
+      border: none;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: app-color(dropdown-menu);
+
+      @include app-styles($dropdown-menu);
+
+      a {
+        color: app-color(dropdown-menu, 'foreground');
+
+        @include app-styles($dropdown-menu-a);
+
+        &:hover, &:focus {
+          color: app-color(dropdown-menu, 'foreground');
+          background-color: app-color(dropdown-menu, 'hover-focus');
+        }
+      }
+    }
+  }
+}

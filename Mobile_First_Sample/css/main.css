@@ -1,0 +1,282 @@
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Quicksand:300,400,700);
+html, body {
+  background-color: #e8e0b7;
+  letter-spacing: 0.2em; }
+
+h1, h2, h3, h4 {
+  font-family: "Oleo Script", Helvetica, sans-serif;
+  font-weight: bold; }
+
+ul {
+  list-style-type: none;
+  padding-left: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+.btn-home {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  min-width: 200px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 3px solid white;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  font-size: 1.2em;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  -moz-transition: all 0.1s ease-in-out 0s;
+  -ms-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s; }
+  .btn-home:hover, .btn-home:focus {
+    border-color: #cccccc;
+    color: #cccccc;
+    outline: 0 !important; }
+
+.navbar-brand, .footer-brand a {
+  font-family: "Oleo Script", Helvetica, sans-serif;
+  color: white;
+  font-size: 1.7em; }
+
+.navbar-inverse {
+  border: none;
+  background-color: #009c7b;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.11);
+  -ms-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.11);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.11); }
+  .navbar-inverse .navbar-brand {
+    color: white; }
+  .navbar-inverse .navbar-collapse {
+    text-align: center;
+    border-color: transparent; }
+  .navbar-inverse .navbar-toggle {
+    border-color: white;
+    margin: 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    border-width: 2px; }
+    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+      background-color: #006953; }
+  .navbar-inverse .navbar-right {
+    text-transform: uppercase; }
+    .navbar-inverse .navbar-right .dropdown-toggle {
+      color: white; }
+      .navbar-inverse .navbar-right .dropdown-toggle:hover {
+        color: #cccccc; }
+    .navbar-inverse .navbar-right .open .dropdown-toggle {
+      background-color: #006953; }
+      .navbar-inverse .navbar-right .open .dropdown-toggle:hover, .navbar-inverse .navbar-right .open .dropdown-toggle:focus {
+        background-color: #006953; }
+    .navbar-inverse .navbar-right .open .dropdown-menu li a {
+      color: white; }
+    .navbar-inverse .navbar-right .dropdown-menu {
+      border: none;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: rgba(0, 156, 123, 0.9);
+      padding: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; }
+      .navbar-inverse .navbar-right .dropdown-menu a {
+        color: white;
+        padding: 15px; }
+        .navbar-inverse .navbar-right .dropdown-menu a:hover, .navbar-inverse .navbar-right .dropdown-menu a:focus {
+          color: white;
+          background-color: #006953; }
+
+footer {
+  text-align: center;
+  background-color: #6b4258;
+  color: white;
+  padding: 15px 0; }
+  @media (min-width: 768px) {
+    footer {
+      padding: 90px 0 60px 0; } }
+
+.footer-brand {
+  margin-bottom: 25px; }
+  @media (min-width: 768px) {
+    .footer-brand {
+      margin-bottom: 0; } }
+
+@media (min-width: 768px) {
+  .footer-sections {
+    text-align: left; } }
+
+.footer-sections div {
+  margin: 0 0 25px 0;
+  display: block; }
+  @media (min-width: 768px) {
+    .footer-sections div {
+      margin: 0 23px 0 0;
+      display: inline-block;
+      vertical-align: top;
+      text-align: left; } }
+  @media (min-width: 992px) {
+    .footer-sections div {
+      margin: 0 69px 0 0; } }
+  @media (min-width: 1200px) {
+    .footer-sections div {
+      margin: 0 95px 0 0; } }
+  @media (min-width: 1200px) {
+    .footer-sections div:first-child {
+      margin-left: 20px; } }
+  .footer-sections div:last-child {
+    margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .footer-sections div:last-child {
+        margin-right: 0; } }
+
+.footer-sections h3 {
+  font-family: inherit;
+  text-transform: uppercase;
+  margin: 0; }
+
+.footer-sections a, .footer-sections ul li a {
+  color: white; }
+
+.footer-sections h3, .footer-sections a {
+  font-weight: bold;
+  font-size: 12px; }
+  @media (min-width: 768px) {
+    .footer-sections h3, .footer-sections a {
+      font-size: 10px; } }
+  @media (min-width: 992px) {
+    .footer-sections h3, .footer-sections a {
+      font-size: 11px; } }
+  @media (min-width: 1200px) {
+    .footer-sections h3, .footer-sections a {
+      font-size: 12px; } }
+
+.footer-sections ul {
+  margin: 0; }
+  .footer-sections ul li {
+    margin-top: 10px; }
+
+@media (min-width: 768px) {
+  .footer-social {
+    text-align: right; } }
+
+.footer-social ul {
+  margin: 25px 0 0 0; }
+  @media (min-width: 768px) {
+    .footer-social ul {
+      margin: 0; } }
+
+.footer-social li {
+  display: inline-block; }
+
+.fa-stack {
+  font-size: 23px; }
+  @media (min-width: 768px) {
+    .fa-stack {
+      font-size: 20px; } }
+  @media (min-width: 992px) {
+    .fa-stack {
+      font-size: 23px; } }
+  @media (min-width: 1200px) {
+    .fa-stack {
+      font-size: 25px; } }
+
+.fa-circle, .footer-sections h3 {
+  color: #cccccc; }
+
+.fa-inverse {
+  color: #6b4258;
+  font-size: 21px; }
+  @media (min-width: 768px) {
+    .fa-inverse {
+      font-size: 19px; } }
+  @media (min-width: 992px) {
+    .fa-inverse {
+      font-size: 21px; } }
+  @media (min-width: 1200px) {
+    .fa-inverse {
+      font-size: 22px; } }
+
+.home-banner {
+  background-image: url("../img/home_banner.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  height: calc(100vh - 50px);
+  margin-top: 50px; }
+  .home-banner .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .home-banner .banner-content h1 {
+      margin: 0 0 20px 0;
+      font-size: 34px; }
+      @media (min-width: 768px) {
+        .home-banner .banner-content h1 {
+          font-size: 50px;
+          margin-bottom: 40px; } }
+
+#section-container {
+  margin: 50px auto; }
+  #section-container:last-child {
+    margin: 0; }
+
+.home-thumbnail {
+  border: none;
+  margin: 0 0 50px 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 2px 11px 2px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0 2px 11px 2px rgba(0, 0, 0, 0.11);
+  -ms-box-shadow: 0 2px 11px 2px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 2px 11px 2px rgba(0, 0, 0, 0.11); }
+  @media (min-width: 768px) {
+    .home-thumbnail {
+      margin: 0; } }
+  .home-thumbnail .img-box {
+    opacity: 1;
+    position: relative;
+    background-color: #6b4258; }
+    @media (min-width: 768px) {
+      .home-thumbnail .img-box:hover .home-thumbnail-img {
+        opacity: 0.1; } }
+    .home-thumbnail .img-box:hover .btn-home-container {
+      display: block; }
+    .home-thumbnail .img-box .home-thumbnail-img {
+      width: 100%;
+      opacity: 0.1;
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      -moz-transition: all 0.3s ease-in-out 0s;
+      -ms-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s; }
+      @media (min-width: 768px) {
+        .home-thumbnail .img-box .home-thumbnail-img {
+          opacity: 1; } }
+    .home-thumbnail .img-box .btn-home-container {
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      @media (min-width: 768px) {
+        .home-thumbnail .img-box .btn-home-container {
+          display: none; } }
+
+/*# sourceMappingURL=main.css.map */

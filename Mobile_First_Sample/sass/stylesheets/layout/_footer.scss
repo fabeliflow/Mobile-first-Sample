@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer {
+  text-align: center;
+  background-color: app-color(footer);
+  color: app-color(footer, 'foreground');
+
+  @include app-styles($footer);
+}
+
+.footer-brand {
+  @include app-styles($footer-brand);
+}
+
+.footer-sections {
+  @include app-styles($footer-sections);
+
+  div {
+    @include app-styles($footer-sections-div);
+
+    &:first-child {
+      @include app-styles($footer-sections-div-fc);
+    }
+
+    &:last-child {
+      @include app-styles($footer-sections-div-lc);
+    }
+  }
+
+  h3 {
+    font-family: inherit;
+    text-transform: uppercase;
+
+    @include app-styles($footer-sections-h3);
+  }
+
+  a, ul li a {
+    color: app-color(footer, 'foreground');
+  }
+
+  h3, a {
+    font-weight: bold;
+
+    @include app-styles($footer-sections-h3_a);
+  }
+
+  ul {
+    @include app-styles($footer-sections-ul);
+
+    li {
+      @include app-styles($footer-sections-li);
+    }
+  }
+}
+
+.footer-social {
+  @include app-styles($footer-social);
+
+  ul {
+    @include app-styles($footer-social-ul);
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+.fa-stack {
+  @include app-styles($fa-stack);
+}
+
+.fa-circle, .footer-sections h3 {
+  color: app-color(footer, 'fa-circle_h3');
+}
+
+.fa-inverse {
+  color: app-color(footer, 'fa-inverse');
+
+  @include app-styles($fa-inverse);
+}

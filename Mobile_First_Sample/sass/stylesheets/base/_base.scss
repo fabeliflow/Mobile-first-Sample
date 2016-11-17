@@ -1,0 +1,48 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html, body {
+  background-color: app-color(html_body);
+
+  @include app-styles($html_body);
+}
+
+h1, h2, h3, h4 {
+  font-family: $header-font;
+  font-weight: bold;
+  color: app-color(headers);
+}
+
+ul {
+	list-style-type: none;
+
+  @include app-styles($ul);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn-home {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: app-color(btn-home, 'foreground');
+
+  @include app-styles($btn-home);
+
+  &:hover, &:focus {
+    border-color: app-color(btn-home, 'hover-focus');
+    color: app-color(btn-home, 'hover-focus');
+
+    @include app-styles($btn-home-h_f);
+  }
+}
+
+.navbar-brand, .footer-brand a {
+  font-family: $header-font;
+  color: white;
+
+  @include app-styles($navbar_footer-brand);
+}

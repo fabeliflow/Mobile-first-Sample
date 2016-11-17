@@ -1,0 +1,402 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Media querie breakpoints.
+$breakpoints: (
+  'small': 768px,
+  'medium': 992px,
+  'large': 1200px
+);
+
+// Browser compability properties.
+$browser-comp-properties: (
+  'border-radius',
+  'box-sizing',
+  'box-shadow',
+  'transform',
+  'transition'
+);
+
+// Application fonts.
+$header-font: 'Oleo Script', Helvetica, sans-serif;
+
+// Color palette.
+$palette: (
+  hampton: (
+    'base': #e8e0b7
+  ),
+  green-haze: (
+    'base': #009c7b,
+    'dark': darken(#009c7b, 10%),
+    'transparent': transparentize(#009c7b, 0.1)
+  ),
+  eggplant: (
+    'base': #6b4258
+  ),
+  white: (
+    'base': white,
+    'dark': darken(white, 20%)
+  )
+);
+
+// App colors.
+$app-colors: (
+  html_body: (
+    'background': map-get(map-get($palette, hampton), 'base')
+  ),
+  headers: (
+    'foreground': map-get(map-get($palette, white), 'base')
+  ),
+  btn-home: (
+    'foreground': map-get(map-get($palette, white), 'base'),
+    'hover-focus': map-get(map-get($palette, white), 'dark')
+  ),
+  navbar: (
+    'foreground': map-get(map-get($palette, white), 'base'),
+    'background': map-get(map-get($palette, green-haze), 'base'),
+    'hover': map-get(map-get($palette, white), 'dark'),
+    'focus': map-get(map-get($palette, green-haze), 'dark')
+  ),
+  navbar-toggle: (
+    'border': map-get(map-get($palette, white), 'base'),
+    'hover-focus': map-get(map-get($palette, green-haze), 'dark')
+  ),
+  dropdown-menu: (
+    'foreground': map-get(map-get($palette, white), 'base'),
+    'background': map-get(map-get($palette, green-haze), 'transparent'),
+    'hover-focus': map-get(map-get($palette, green-haze), 'dark')
+  ),
+  img-box: (
+    'background': map-get(map-get($palette, eggplant), 'base')
+  ),
+  footer: (
+    'foreground': map-get(map-get($palette, white), 'base'),
+    'background': map-get(map-get($palette, eggplant), 'base'),
+    'fa-circle_h3': map-get(map-get($palette, white), 'dark'),
+    'fa-inverse': map-get(map-get($palette, eggplant), 'base')
+  )
+);
+
+// Html and body styles.
+$html_body: (
+  letter-spacing: (
+    'mobile': 0.2em
+  )
+);
+
+// Ul styles.
+$ul: (
+  padding-left: (
+    'mobile': 0
+  )
+);
+
+// Home button styles.
+$btn-home: (
+  min-width: (
+    'mobile': 200px
+  ),
+  margin: (
+    'mobile': 10px 0
+  ),
+  padding: (
+    'mobile': 10px
+  ),
+  border: (
+    'mobile': 3px solid map-get(map-get($app-colors, btn-home), 'foreground')
+  ),
+  border-radius: (
+    'mobile': 0
+  ),
+  font-size: (
+    'mobile': 1.2em
+  ),
+  transition: (
+    'mobile': all 0.1s ease-in-out 0s
+  )
+);
+
+// Home button hover/focus styles.
+$btn-home-h_f: (
+  outline: (
+    'mobile': 0 !important
+  )
+);
+
+// Navbar brand and footer brand styles.
+$navbar_footer-brand: (
+  font-size: (
+    'mobile': 1.7em
+  )
+);
+
+// Navbar styles.
+$navbar: (
+  margin-bottom: (
+    'mobile': 0
+  ),
+  box-shadow: (
+    'mobile': 0 0 6px 0 rgba(0, 0, 0, 0.11)
+  )
+);
+
+// Navbar styles.
+$navbar-toggle: (
+  margin: (
+    'mobile': 10px
+  ),
+  border-radius: (
+    'mobile': 0
+  ),
+  border-width: (
+    'mobile': 2px
+  )
+);
+
+// Dropdown menu styles.
+$dropdown-menu: (
+  padding: (
+    'mobile': 0
+  ),
+  border-radius: (
+    'mobile': 0
+  )
+);
+
+// Dropdown menu a styles.
+$dropdown-menu-a: (
+  padding: (
+    'mobile': 15px
+  )
+);
+
+// Home page banner styles.
+$home-banner: (
+  height: (
+    'mobile': calc(100vh - 50px) // 100% viewport - navbar height
+  ),
+  margin-top: (
+    'mobile': 50px // removes navbar overlapping
+  )
+);
+
+// Home page banner content style.
+$banner-content: (
+  top: (
+    'mobile': 50%
+  ),
+  left: (
+    'mobile': 50%
+  ),
+  transform: (
+    'mobile': translate(-50%, -50%)
+  )
+);
+
+// Home page banner content h1 responsive styles.
+$banner-content-h1: (
+  margin: (
+    'mobile': 0 0 20px 0
+  ),
+  font-size: (
+    'mobile': 34px,
+    'small': 50px
+  ),
+  margin-bottom: (
+    'small': 40px
+  )
+);
+
+// Section container styles.
+$section-container: (
+  margin: (
+    'mobile': 50px auto
+  )
+);
+
+// Section container last-child styles.
+$section-container-lc: (
+  margin: (
+    'mobile': 0
+  )
+);
+
+// Home thumbnail responsive styles.
+$home-thumbnail: (
+  margin: (
+    'mobile': 0 0 50px 0,
+    'small': 0
+  ),
+  border-radius: (
+    'mobile': 0
+  ),
+  box-shadow: (
+    'mobile': 0 2px 11px 2px rgba(0, 0, 0, 0.11)
+  )
+);
+
+// Home thumbnail image box hover
+// home thumbnail image responsive styles.
+$img-box-h_home-thumbnail-img: (
+  opacity: (
+    'small': 0.1
+  )
+);
+
+// Home thumbnail image responsive styles.
+$home-thumbnail-img: (
+    width: (
+      'mobile': 100%
+    ),
+    opacity: (
+      'mobile': 0.1,
+      'small': 1
+    ),
+    transition: (
+      'mobile': all 0.3s ease-in-out 0s
+    )
+);
+
+// Home button container responsive styles.
+$btn-home-container: (
+  display: (
+    'mobile': block,
+    'small': none
+  ),
+  top: (
+    'mobile': 50%
+  ),
+  left: (
+    'mobile': 50%
+  ),
+  transform: (
+    'mobile': translate(-50%, -50%)
+  )
+);
+
+// Footer responsive styles.
+$footer: (
+  padding: (
+    'mobile': 15px 0,
+    'small': 90px 0 60px 0
+  )
+);
+
+// Footer brand responsive styles.
+$footer-brand: (
+  margin-bottom: (
+    'mobile': 25px,
+    'small': 0
+  )
+);
+
+// Footer sections responsive styles.
+$footer-sections: (
+  text-align: (
+    'small': left
+  )
+);
+
+// Footer sections div responsive styles.
+$footer-sections-div: (
+  margin: (
+    'mobile': 0 0 25px 0,
+    'small': 0 23px 0 0,
+    'medium': 0 69px 0 0,
+    'large': 0 95px 0 0
+  ),
+  display: (
+    'mobile': block,
+    'small': inline-block
+  ),
+  vertical-align: (
+    'small': top
+  ),
+  text-align: (
+    'small': left
+  )
+);
+
+// Footer sections div first-child responsive styles.
+$footer-sections-div-fc: (
+  margin-left: (
+    'large': 20px
+  )
+);
+
+// Footer sections div last-child responsive styles.
+$footer-sections-div-lc: (
+  margin-right: (
+    'small': 0
+  ),
+  margin-bottom: (
+    'mobile': 0
+  )
+);
+
+// Footer sections h3 styles.
+$footer-sections-h3: (
+  margin: (
+    'mobile': 0
+  )
+);
+
+// Footer sections h3 and a responsive styles.
+$footer-sections-h3_a: (
+  font-size: (
+    'mobile': 12px,
+    'small': 10px,
+    'medium': 11px,
+    'large': 12px
+  )
+);
+
+// Footer sections ul styles.
+$footer-sections-ul: (
+  margin: (
+    'mobile': 0
+  )
+);
+
+// Footer sections li styles.
+$footer-sections-li: (
+  margin-top: (
+    'mobile': 10px
+  )
+);
+
+// Footer social responsive styles.
+$footer-social: (
+  text-align: (
+    'small': right
+  )
+);
+
+// Footer social ul responsive styles.
+$footer-social-ul: (
+  margin: (
+    'mobile': 25px 0 0 0,
+    'small': 0
+  )
+);
+
+// Footer social fa-stack (icon container) responsive styles.
+$fa-stack: (
+  font-size: (
+    'mobile': 23px,
+    'small': 20px,
+    'medium': 23px,
+    'large': 25px
+  )
+);
+
+// Footer social fa-inverse (social icon) responsive styles.
+$fa-inverse: (
+  font-size: (
+    'mobile': 21px,
+    'small': 19px,
+    'medium': 21px,
+    'large': 22px
+  )
+);

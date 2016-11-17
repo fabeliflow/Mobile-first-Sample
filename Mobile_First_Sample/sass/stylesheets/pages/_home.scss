@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.home-banner {
+  background-image: url('../img/home_banner.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+
+  @include app-styles($home-banner);
+
+  .banner-content {
+    position: absolute;
+
+    @include app-styles($banner-content);
+
+    h1 {
+      @include app-styles($banner-content-h1);
+    }
+  }
+}
+
+#section-container {
+  @include app-styles($section-container);
+
+  &:last-child {
+    @include app-styles($section-container-lc);
+  }
+}
+
+.home-thumbnail {
+  border: none;
+
+  @include app-styles($home-thumbnail);
+
+  .img-box {
+    opacity: 1;
+    position: relative;
+    background-color: app-color(img-box);
+
+    &:hover {
+      .home-thumbnail-img {
+        @include app-styles($img-box-h_home-thumbnail-img);
+      }
+
+      .btn-home-container {
+        display: block;
+      }
+    }
+
+    .home-thumbnail-img {
+      @include app-styles($home-thumbnail-img);
+    }
+
+    .btn-home-container {
+      position: absolute;
+
+      @include app-styles($btn-home-container);
+    }
+  }
+}
